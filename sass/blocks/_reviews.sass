@@ -1,0 +1,102 @@
+.reviews
+  padding: 40px 0 70px 0
+  //margin-bottom: -100px
+  &__title
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    font-style: normal
+    font-weight: bold
+    margin-top: 0
+    margin-bottom: 70px
+  &-slider
+    &__text
+      max-height: 118px
+      overflow-y: auto
+    &__item
+      max-width: 731px
+      margin: 45px auto 0
+      background-color: #ffffff
+      border-radius: 8px
+      align-items: center
+      display: flex
+      flex-direction: column
+      padding: 0 62px 30px
+      position: relative
+      &::before
+        left: 62px
+        top: 13px
+        content: ''
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+        position: absolute
+        width: 70px
+        height: 47px
+      &::after
+        right: 60px
+        top: 119px
+        content: ''
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+        position: absolute
+        width: 70px
+        height: 47px
+    &__button
+      position: absolute
+      top: 45%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      cursor: pointer
+      z-index: 99
+      &-prev
+        background-image: url(../img/arrow-prev-secondary.svg)
+        left: 14px
+      &-next
+        background-image: url(../img/arrow-next-secondary.svg)
+        right: 14px
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 33px
+    &__avatar
+      height: 90px
+      width: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: -2px
+    &__username
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-bottom: 10px
+    &__date
+      font-style: normal
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+      color: #000000
+    &__rating
+      display: flex
+      align-items: center
+      margin-top: -1px
+      margin-left: 4px
+    &__text
+      max-width: 537px
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin: auto

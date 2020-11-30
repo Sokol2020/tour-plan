@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Tour Plan - Hotel Booking</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+    rel="stylesheet">
+  <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>-->
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-top">
+        <a href="#" class="logo">
+          <img src="img/horizontal_logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
+        </a>
+
+          <form action="#" class="search navbar__search">
+            <input type="text" class="search__input" placeholder="Search Location">
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search">
+            </button>
+          </form>
+
+          <a href="#" class="user navbar__user">
+              <img src="img/user_avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name">Nathan</span>
+          </a>
+          <!-- /.user -->
+
+          <button class="menu-button navbar-top__menu-button">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
+
+      </div>
+      <!-- /.navbar-top -->
+    </div>
+    <!-- /.container -->
+    <div class="navbar-bottom">
+      <div class="container">
+              <ul class="navbar-menu">
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">All Deals</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Hotels</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Activities</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Restaurants</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Events</a>
+                </li>
+                <li class="navbar-menu__item">
+                  <a href="#" class="navbar-menu__link">Rodrigues</a>
+                </li>
+              </ul>
+              <!-- /.navbar-menu -->
+      </div>
+      <!-- /.container -->
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <div class="container">
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-list__item">
+              <a href="#" class="breadcrumb-list__link">Home</a>
+            </li>
+            <li class="breadcrumb-list__item">
+              <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+            </li>
+            <li class="breadcrumb-list__item">
+              Grand Hilton Hotel
+            </li>
+          </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.breadcrumb -->
+
+  <section class="hotel">
+    <div class="container">
+      <div class="hotel-info">
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+                      <div class="stars">
+                        <img class="stars__star" src="img/Star.png" alt="Star">
+                        <img class="stars__star" src="img/Star.png" alt="Star">
+                        <img class="stars__star" src="img/Star.png" alt="Star">
+                        <img class="stars__star" src="img/Star.png" alt="Star">
+                        <img class="stars__star" src="img/Star.png" alt="Star">
+                      </div>
+                      <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+                      <span class="offer hotel-info__offer">Flash Offer</span>
+          </div>
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+            </p>
+        </div>
+        <!-- /.hotel-info__text -->
+        <div class="rating hotel-info__rating">
+          <span class="rating__text">User Rattings</span>
+            <span class="rating__counter__rating-now">4.5</span><span class="rating__counter__slash">/</span><span class="rating__counter__rating-max">5</span>
+        </div>
+        <!-- /.hotel-info__right -->
+      </div>
+      <div class="hotel-grid">
+              <!-- Slider main container -->
+               <div class="swiper-container hotel-slider hotel__slider">
+                 <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                   <!-- Slides -->
+                  <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/Rectangle.jpg" alt=""></div>
+                  <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/Greek.jpg" alt=""></div>
+                  <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/City.jpg" alt=""></div>
+                  <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/old-town.jpg" alt=""></div>
+                  <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__image" src="img/montenegro.jpg" alt=""></div>
+                 </div>
+                      
+                <!-- If we need navigation buttons -->
+                <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                <button class="hotel-slider__button hotel-slider__button--next"></button>
+                  <!--/. swiper-container-->
+              </div>
+        <!-- /.hotel-grid -->
+        <div class="hotel-right">
+                  <div class="booking">
+                    <div class="booking__info">
+                      <div class="booking__price">
+                        <span class="booking__start">price starts as</span>
+                        <strong class="booking__pricetag">$ 8,500</strong>
+                        <span class="booking__per-room">per room / night</span>
+                      </div>
+                      <!-- /.booking__price -->
+                      <div class="booking__room">
+                        <div class="booking__text">
+                          <img src="img/user.svg" alt="Icon: user" class="booking__icon">
+                          <span class="booking__description">2 x Guests</span>
+                        </div>
+                        <div class="booking__text">
+                          <img src="img/home.svg" alt="Icon: user" class="booking__icon">
+                          <span class="booking__description">1 x Room</span>
+                        </div>
+                        <!-- /.booking__room -->
+                      </div>
+                      <!-- /.booking__info -->
+                    </div>
+                    <div class="booking__call-center">
+                      <span class="booking__heading">Quick Booking</span>
+                      <a class="booking__number" href="tel: 12100">
+                        <img src="img/phone-call.svg" alt="Icon: phone">
+                        <span class="booking__num">12100</span>
+                      </a>
+                    </div>
+                    <!--/.booking__call-center-->
+                    <button class="button booking__button">View Other Options</button>
+                    <!-- /.booking -->
+                  </div>
+                  <div class="map">
+                     <!--<div class="map-iframe" id="map" style="width: 100%; height: 100%"></div>-->
+                    <iframe class="map-iframe"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8576.03602351161!2d34.73174947788175!3d25.345196781992968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15b4bb2438ff0bdf%3A0x1720e45850b1efa5!2sHilton%20Marsa%20Alam%20Nubian%20Resort!5e0!3m2!1sru!2sua!4v1606242815512!5m2!1sru!2sua"
+                      width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                      tabindex="0"></iframe>
+                  </div>
+                  <!--/.map-->
+        </div>
+        <!-- /.hotel-right-wrapper -->
+      </div>
+      <!-- /.hotel-info -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-wrapper">
+      <h2 class="newsletter-title newsletter__title">
+        subscribe to our
+        <span class="newsletter-title__strong">Newsletter</span>
+      </h2>
+      
+       <form action="#" class="subscribe newsletter__search">
+         <input type="text" class="subscribe__input" placeholder="Your email address">
+         <button class="subscribe__button">Send</button>
+       </form>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews_avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating-->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
+              that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
+              were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
+              atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it
+              was a good experience and could recommend.</p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide-->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews_avatar-2.jpg" alt="Photo: Robert Berman" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Robert Berman</h3>
+                <span class="reviews-slider__date">Stayed 05 May, 2017</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating-->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">The agency offered us this hotel, and we stayed there. I liked the hotel, the sea was very close, 100 meters from the
+              hotel and restaurant. The territory is fenced, security is everywhere, I liked it, because we could safely let the
+              children go, they walked around the territory, and we did not worry about anything. I liked that there were animators
+              who worked with children. In addition, every night we had some concerts or performances. There was a water park on the
+              territory. In general, everywhere was perfect cleanliness, a green alley leads to the sea, which is nice to walk. I
+              liked the food, there was even too much of everything, delicious and varied food; I wanted to try everything, we joked
+              that we could not stand the plane :) There was a situation when a child fell ill, we went to the insurance company, were
+              in the hospital, the doctor examined and provided assistance. The room was normal, the hair dryer did not work, they
+              went to the reception, and within 2 hours everything was repaired, that is, if something does not work, they will
+              respond very quickly. The guide offered excursions, but we did not go.</p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide-->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews_avatar-3.jpg" alt="Photo: Jack Clinton" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Jack Clinton</h3>
+                <span class="reviews-slider__date">Stayed 22 Aug, 2020</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating-->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">he hotel was offered by the agency as for a holiday with a child 6 years old. The service is excellent, the food is
+              varied, everything is very tasty, the territory is large, well-groomed, everything is clean: on the beach, the room is
+              cleaned like at home, right down to the glasses and mirrors every day. We lived in room 7962 in a bungalow (they booked
+              there), there is a lot of entertainment for the kids, our own children's restaurant, the rooms are well renovated, the
+              floor is laminate, shower accessories in full - you can not take with you, bathrobes, slippers, everything is there.
+              Pools for children are shallow, convenient for little ones, large slides began to work in the last days of our vacation,
+              this is for 12+. The attitude towards guests is attentive and unobtrusive, all issues are resolved quickly. We requested
+              blankets (on arrival it was cool at night). the mini bar is replenished daily. There is simply nothing to find fault
+              with. If you have any questions - write, I will answer</p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide-->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews_avatar-4.jpg" alt="Photo: Clara Ray" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Clara Ray</h3>
+                <span class="reviews-slider__date">Stayed 30 Jan, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                  <img class="stars__star" src="img/Star.png" alt="Star">
+                </div>
+                <!-- /.reviews-slider__rating-->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">Rested in this beautiful hotel. They are greeted with champagne, so throughout the rest you walk with a glass in your
+              hands) all cocktails, drinks are of excellent quality. Don't want to drink) The food in the restaurant and snack bar is
+              varied and delicious. Service at the best level. Everyone is smiling, communicating with you. The exterior of the hotel
+              is lovely. Grass, palm trees, fountains, seals) the entrance to the sea is not so scary. Yes, there are stones, but
+              there are several large ones, but this is the problem of the whole Side. Therefore, there is nothing wrong) wider eyes
+              and swim forward) for 9 days of rest I can only say that it was a wonderful rest. Thanks to Otium Seven Seas for the
+              service and the mood!</p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!--/.swiper-slide-->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button-prev"></button>
+        <button class="reviews-slider__button reviews-slider__button-next"></button>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <h2 class="activities__title">Other Activities</h2>
+      <div class="activities-wrapper">
+        <div class="card activities__card">
+          <img src="img/Act-1.jpg" alt="The curious corner of chamarel" class="card__image">
+          <h3 class="card__title">The curious corner<br> of chamarel</h3>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!--/.card-->
+        <div class="card activities__card">
+          <img src="img/Act-2.jpg" alt="Gymkhana club golf course" class="card__image">
+          <h3 class="card__title">Gymkhana club golf<br> course</h3>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!--/.card-->
+        <div class="card activities__card">
+          <img src="img/Act-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!--/.card-->
+        <div class="card activities__card">
+          <img src="img/Act-4.jpg" alt="The blue marine discovery quest" class="card__image">
+          <h3 class="card__title">The blue marine discovery<br> quest</h3>
+          <button class="card__button">Book Now</button>
+        </div>
+        <!--/.card-->
+      </div>
+      <!-- /.activities-wrapper -->
+    </div>
+  </section>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

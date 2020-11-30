@@ -1,0 +1,74 @@
+.newsletter
+  position: relative
+  padding: 98px 0 87px 0
+  background-image: url(../img/background-bg.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  height: 260px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.8)
+  &-wrapper
+    position: relative
+    max-width: 731px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: auto
+  &-title
+    margin-top: -3px
+    color: $light
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    &__strong
+      display: block
+      font-size: 36px
+      line-height: 45px
+      text-transform: uppercase
+.subscribe
+  margin-top: -18px
+  border-radius: 4px
+  position: relative
+  min-width: 350px
+  height: 55px
+  overflow: hidden
+  &__input
+    position: absolute
+    height: 100%
+    width: 100%
+    padding-right: 75px
+    border: none
+    padding-left: 33px
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+  &__button
+    min-width: 65px
+    max-width: 30%
+    height: 100%
+    position: absolute
+    right: 0
+    top: 0
+    border: none
+    background-color: $primary
+    color: $light
+    cursor: pointer
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    //overflow: hidden
+    //white-space: nowrap
+    //text-overflow: ellipsis
+    //word-wrap: break-word
+    //word-break: break-all
