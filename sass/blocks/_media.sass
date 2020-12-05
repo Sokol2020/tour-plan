@@ -14,6 +14,9 @@
   .card
     width: 230px
     height: 250px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -145,23 +148,109 @@
       font-size: 30px
       line-height: 38px
   .activities
+    margin-bottom: -50px
     margin-top: -7px
     &-title
       margin: 0
     &-wrapper
       flex-wrap: wrap
+      padding-bottom: 0
     &__card
       margin-bottom: 20px
   .card
     width: 339px
     min-height: 255px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 38px
+    &__input
+      flex-basis: 48%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+      width: 104px
+      height: 110px
+      margin-top: -40px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+        margin-top: -18px
+        margin-left: -53px
+    &__categories
+      margin-top: 15px
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      margin-top: 15px
+      margin-left: -38px
+      grid-column: span 2
+    &__legal
+      margin-top: 15px
+      margin-left: 20px
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+        margin-top: 22px
+        margin-left: 3px
+      &-form
+        margin-top: -5px
+        margin-left: -5px
+        grid-column: span 5
+        grid-row: 4
+        max-width: 545px
+    &__message
+      flex-basis: 100%
+    &__input
+      flex-basis: 47%
+      margin-top: 2px
+  .privacy-policy
+    justify-content: space-between
+    margin-top: -37px
 @media (max-width: 767px )
   .container
     max-width: 576px
-    width: 92%
+    width: 90%
+  body
+    padding-top: 78px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      bottom: 0
+      right: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       width: 16px
@@ -178,6 +267,13 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
+        justify-content: center
   .stars
     flex-basis: auto
   .swiper
@@ -248,9 +344,17 @@
   .card
     width: 49%
     height: 255px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__social
+      &-network
+        margin-left: 0
+    &__additional
+      margin-left: 0
+    &__legal
+      margin-left: 0
 @media (max-width: 576px )
-  //.logo
-  //  width: 99px
   .hotel
     &__slider
       margin-bottom: 20px
@@ -262,12 +366,61 @@
       margin-bottom: 37px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+  .footer
+    &__social
+      &-network
+        margin-left: 0
+    &__additional
+      margin-left: 0
+    &__legal
+      margin-left: 0
+    &__form
+      max-width: 400px
 @media (max-width: 480px)
   .subscribe
     width: 100%
     padding-bottom: 50px
     min-width: 280px
     border-radius: 4px
+  .footer
+    &__form
+      max-width: 281px
+      flex-basis: 100%
+  .privacy-police
+    flex-wrap: wrap
+    &__wrapper
+      flex-wrap: wrap
+      width: 277px
+    &__payment
+      flex-wrap: wrap
+      position: relative
+      max-width: 100%
 @media (max-width: 320px )
   .container
     max-width: 284px
