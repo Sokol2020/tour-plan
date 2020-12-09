@@ -210,7 +210,7 @@
       </h2>
       
        <form action="#" class="subscribe newsletter__search">
-         <input type="text" class="subscribe__input" placeholder="Your email address">
+         <input type="email" class="subscribe__input" placeholder="Your email address">
          <button class="subscribe__button">Send</button>
        </form>
     </div>
@@ -457,9 +457,13 @@
           <!--/.footer__contact-details-->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <form action="send.php" method="POST" class="footer__form form">
+             <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" required name="name">
+             </div>
+             <div class="footer__input-group">
+              <input id="phone_1" type="tel" class="input footer__input mask-phone" placeholder="Phone Number*" required name="phone">
+             </div>
               <textarea class="footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -490,10 +494,10 @@
       </a>
 
       <h3 class="modal__title modal__title--mb-4">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="text" class="input modal__input" placeholder="Email*" name="mail">
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name">
+        <input id="phone_2" type="text" class="input modal__input mask-phone" required placeholder="Phone Number*" name="phone">
+        <input type="email" class="input modal__input" required placeholder="Your Email*" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button">Send</button>
         <span class="modal__info">* Required Fields</span>
@@ -504,7 +508,17 @@
   </div>
   <!-- /.modal -->
   <script src="js/jquerry-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <!--<script src="js/jquery.mask.js"></script>-->
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
+
+<script>
+  $('.mask-phone').mask('+7 (999) 999-99-99');
+</script>
+
+
 </html>
