@@ -41,7 +41,7 @@
   position: relative
   min-width: 350px
   height: 55px
-  overflow: hidden
+  //overflow: hidden
   &__input
     position: absolute
     height: 100%
@@ -52,6 +52,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
   &__button
     min-width: 65px
     max-width: 30%
@@ -67,8 +68,15 @@
     font-weight: bold
     font-size: 12px
     line-height: 15px
+    //position: absolute
+    z-index: 150
+    border-radius: 0px 4px 4px 0px
     //overflow: hidden
     //white-space: nowrap
     //text-overflow: ellipsis
     //word-wrap: break-word
     //word-break: break-all
+.error
+  position: absolute
+  z-index: 150
+  color: $primary

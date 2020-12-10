@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
@@ -16,7 +17,7 @@
   <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right">
           <img src="img/horizontal_logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
@@ -182,7 +183,7 @@
                         <span class="booking__num">12100</span>
                       </a>
                     </div>
-                    <!--/.booking__call-center-->
+                    <!--/.booking__call-center--> 
                     <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
                     <!-- /.booking -->
                   </div>
@@ -208,11 +209,12 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      
-       <form action="#" class="subscribe newsletter__search">
-         <input type="email" class="subscribe__input" placeholder="Your email address">
-         <button class="subscribe__button">Send</button>
-       </form>
+      <div class="subscribe-group">
+        <form action="mail.php" method="POST" class="newsletter__search subscribe">
+          <input type="email" class="subscribe__input" required placeholder="Your email address" name="mail">
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -345,25 +347,25 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/Act-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner<br> of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!--/.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/Act-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf<br> course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!--/.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/Act-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!--/.card-->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/Act-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery<br> quest</h3>
           <button class="card__button">Book Now</button>
@@ -377,7 +379,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="fade-right">
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
@@ -492,17 +494,15 @@
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="icon: close">
       </a>
-
       <h3 class="modal__title modal__title--mb-4">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" required placeholder="Your Full Name*" name="name">
-        <input id="phone_2" type="text" class="input modal__input mask-phone" required placeholder="Phone Number*" name="phone">
+        <input id="phone_2" type="tel" class="input modal__input mask-phone" required placeholder="Phone Number*" name="phone">
         <input type="email" class="input modal__input" required placeholder="Your Email*" name="email">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
-
     </div>
     <!-- /.modal__dialog -->
   </div>
@@ -512,13 +512,10 @@
   <!--<script src="js/jquery.mask.js"></script>-->
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
-
-
 <script>
   $('.mask-phone').mask('+7 (999) 999-99-99');
 </script>
-
-
 </html>

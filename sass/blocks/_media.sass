@@ -242,6 +242,9 @@
           display: none
         &_visible
           display: flex
+          margin: 0
+          align-items: center
+          justify-content: center
     &__user
       flex-direction: column
       justify-content: center
@@ -265,6 +268,13 @@
             margin-bottom: 20px
       &__link
         margin-top: 20px
+  .navbar
+    &__search
+      &--mobile
+        &_visible
+          margin: 0
+          align-items: center
+          justify-content: center
   .menu
     &-button
       width: 16px
@@ -380,6 +390,13 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+  .navbar
+    &__search
+      &--mobile
+        &_visible
+          margin: 0
+          align-items: center
+          justify-content: center
   .card
     width: 100%
   .footer
@@ -488,14 +505,15 @@
       display: block
       flex-wrap: wrap
       margin-top: 10px
-@media (max-width: 320px )
+//@media (min-width: 320px) and (max-width: 479px)
+@media (max-width: 320px)
   .container
     max-width: 284px
     margin-top: -27px
     padding-left: 4px
   .logo
     margin-top: 20px
-    width: 100px
+    max-width: 100px
   .navbar
     &-bottom
       padding-top: 60px

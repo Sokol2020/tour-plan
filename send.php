@@ -27,7 +27,6 @@ try {
     //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     //$mail->Username   = 'mr.sokolsergey@gmail.com'; // Логин на почте

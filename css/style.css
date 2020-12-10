@@ -40,12 +40,13 @@ img {
   background-color: #EC1F46;
   color: #ffffff;
   padding: 18px;
-  border-radius: 4px;
   border: none;
+  border-radius: 4px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .a {
@@ -953,7 +954,6 @@ template {
   position: relative;
   min-width: 350px;
   height: 55px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -966,6 +966,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -983,6 +984,14 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  z-index: 150;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.error {
+  position: absolute;
+  z-index: 150;
+  color: #EC1F46;
 }
 
 .reviews {
@@ -1308,9 +1317,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1401,6 +1410,7 @@ template {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 46.5%;
       flex-basis: 46.5%;
+  position: relative;
 }
 
 .footer__message {
@@ -1486,8 +1496,6 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
 }
 
 .modal__overlay--visible {
@@ -1911,6 +1919,13 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -1948,6 +1963,15 @@ template {
   }
   .navbar-menu__link {
     margin-top: 20px;
+  }
+  .navbar__search--mobile_visible {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .menu-button {
     width: 16px;
@@ -2117,6 +2141,15 @@ template {
   }
   .newsletter__title {
     margin-bottom: 37px;
+  }
+  .navbar__search--mobile_visible {
+    margin: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .card {
     width: 100%;
@@ -2292,7 +2325,7 @@ template {
   }
   .logo {
     margin-top: 20px;
-    width: 100px;
+    max-width: 100px;
   }
   .navbar-bottom {
     padding-top: 60px;

@@ -47,7 +47,6 @@ var mySwiper = new Swiper('.reviews-slider', {
 //    }
 
 
-
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener('click', function() {
     console.log("Клик");
@@ -60,11 +59,8 @@ var mySwiper = new Swiper('.reviews-slider', {
   closeModalButton.on('click', closeModal);
 
   function openModal() {
-    //var targetModal = $(this).attr("data-href");
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    //$(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
-    //$(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
     modalOverlay.addClass('modal__overlay--visible');
     modalDialog.addClass('modal__dialog--visible');
   }
@@ -93,11 +89,21 @@ var mySwiper = new Swiper('.reviews-slider', {
       },
       phone: {
         required: "We need your phone",
-        //phone: "Your phone must be in the format of +99999999999"
       },
     },
+  });    
   });
-    //$('.phone').mask('+7(999) 999-99-99');
-    
+
+  $(".subscribe").each(function(){
+    $(this).validate({
+    errorClass: "error",
+    messages: {
+      mail: {
+        required: "We need your email to contact",
+        mail: "Please enter a valid email address.",
+      },
+    },
+  });    
   });
+  AOS.init();
 });
